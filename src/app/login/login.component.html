@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Simple registration form</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="main-block">
+
+    <h1>Registration</h1>
+    <form (ngSubmit)="onLogin($event)">
+      <hr>
+      <div class="account-type">
+        <input type="radio" value="none" id="radioOne" name="account" value="etudiant" [(ngModel)]="role" checked />
+        <label for="radioOne" class="radio">Etudiant</label>
+        <input type="radio" value="none" id="radioTwo" name="account" [(ngModel)]="role" />
+        <label for="radioTwo" class="radio">Professeur</label>
+      </div>
+      <hr>
+      <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+      <input type="text" name="name" id="name" placeholder="Email" [(ngModel)]="email" name="email"
+        pattern="[A-Z][a-zA-Z]*" required />
+
+      <label id="icon" for="name"><i class="fas fa-user"></i></label>
+      <input type="text" name="name" id="name" placeholder="Nom de l'utilisateur" [(ngModel)]="username" name="username"
+        required />
+      <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+      <input type="password" name="name" id="name" placeholder="Mot de passe" [(ngModel)]="password" name="password"
+        required />
+      <hr>
+      <div class="gender">
+        <input type="radio" value="none" id="Femme" name="gender" checked />
+        <label for="male" class="radio">Femme</label>
+        <input type="radio" value="none" id="Homme" name="gender" />
+        <label for="female" class="radio">Homme</label>
+      </div>
+      <hr>
+      <div class="btn-block">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<input
+  type="text"
+  [(ngModel)]="searchTerm"
+  placeholder="Rechercher une matière..."
+  class="search-bar"
+/>
+
+<div class="subjects-container">
+  <div class="subject-card" *ngFor="let subject of filteredSubjects">
+    <img [src]="subject.image" [alt]="subject.name" class="subject-image" />
+    <h3>{{ subject.name }}</h3>
+  </div>
+</div>

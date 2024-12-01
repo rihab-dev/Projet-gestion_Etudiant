@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+body {
+    background-color: #fdf6e3;
+    /* Couleur de fond Solar */
+    color: #657b83;
+    /* Couleur du texte */
+}
+
+.navbar {
+    background-color: #268bd2;
+    /* Couleur de fond pour la navbar */
+}
+
+.footer {
+    background-color: #2aa198;
+    /* Couleur pour le footer */
+    color: #fdf6e3;
+    /* Couleur de texte du footer */
+}
